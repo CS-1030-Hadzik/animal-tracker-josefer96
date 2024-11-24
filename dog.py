@@ -1,5 +1,4 @@
-from animal import Animal
-class Dog(Animal):
+class Dog():
     """
     Derived class representing a dog, which is a type of Animal.
     """
@@ -10,7 +9,7 @@ class Dog(Animal):
             self.breed = breed
             self.name = name
             self.species = species
-            Animal.all_animals.append(self)
+            Dog.all_dogs.append(self)
             
     # The constructor should accept name, species, and breed as parameters.
     # TODO: Override the __str__ method to include the breed.
@@ -25,5 +24,6 @@ class Dog(Animal):
     @classmethod
     def get_all_dogs(speak):
         speak = 'bark'
-        return Animal.all_animals
+        return Dog.all_dogs
+    
     

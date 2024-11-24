@@ -9,19 +9,20 @@ if __name__ == "__main__":
     print(animal)
     
     # TODO: Call the method to make a generic animal sound
-    animal.speak()
-
+    @classmethod
+    def animal_speak():
     # TODO: Create an instance of the Dog class
-    dog = Dog (name= "Buddy", species="Canine", breed= "Golden Retriever")
+        dog = animal (name= "Buddy", species="Canine", breed= "Golden Retriever")
     
     # TODO: Print the Dog instance
-    print(dog)
+    print(Dog)
     
     # TODO: Call the method to make the dog-specific sound
-    dog.speak()
+    @classmethod
+    def dog_speak():
 
     # TODO print out all the animals
-    print("\nAll Animals:")
-    animals = {animal, dog}
+        print("\nAll Animals:")
+    animals = {animal, Dog}
     for a in animals:
         print(a)

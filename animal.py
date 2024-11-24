@@ -22,3 +22,5 @@ class Animal:
     # Kingdom: 'kingdom attribute', Name: 'name attribute' Species: 'species attribute' 
     def __str__(self):
          return f"Kindom: '{self.kingdom}', Name '{self.name}', Species: '{self.species}'"
+     
+    canine = Dog.all_dogs
