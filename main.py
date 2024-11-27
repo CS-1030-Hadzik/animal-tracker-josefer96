@@ -3,26 +3,24 @@ from dog import Dog
 
 if __name__ == "__main__":
     # TODO: Create an instance of the Animal class
-    animal = Animal(name = "Generic Animal", species= "Unkown Species")
+    animal = Animal("Generic", "Unkown")
     
     # TODO: Print the Animal instance
     print(animal)
     
     # TODO: Call the method to make a generic animal sound
-    @classmethod
-    def animal_speak():
+    animal.speak()
+
     # TODO: Create an instance of the Dog class
-        dog = animal (name= "Buddy", species="Canine", breed= "Golden Retriever")
+    brown_dog = Dog("Fred","Canine","Golden Retriver")
     
     # TODO: Print the Dog instance
-    print(Dog)
+    print(brown_dog)
     
     # TODO: Call the method to make the dog-specific sound
-    @classmethod
-    def dog_speak():
+    brown_dog.speak()
 
     # TODO print out all the animals
-        print("\nAll Animals:")
-    animals = {animal, Dog}
-    for a in animals:
+    print("All Animals:")
+    for a in Animal.all_animals:
         print(a)
